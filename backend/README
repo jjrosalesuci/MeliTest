@@ -1,7 +1,5 @@
 1 - Instalar Node JS
 https://nodejs.org/en/
-2 - Instalar express
-    npm install express --save
     
-3 - npm install
-4 - npm run start
+2 - npm install
+3 - npm run start
