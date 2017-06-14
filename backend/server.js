@@ -150,4 +150,4 @@ router.route('/item/:id')
 	
 app.use('/api', router);
 app.listen(port);
-console.log('Servidor inicado ' + port);
+console.log('Servidor iniciado ' + port);
