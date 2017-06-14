@@ -1,7 +1,5 @@
-Instalar Node JS
-Instalar Express
- 
-Luego posicionarce en la carpeta backend y ejecutar los siguientes comandos.
+1 - Instalar Node JS
+https://nodejs.org/en/
 
-npm install
-npm run start
+2 - npm install
+3 - npm run start
