@@ -1,0 +1,199 @@
+// include another .scss file from a sub-directory
+@import './about/about.scss';
+@import './reset.scss';
+@import './flexboxgrid.css';
+
+$yelow       :  #FFE600;
+$dark-gray   :  #333333;
+$medium-gray :  #999999;
+$ligth-gray  :  #EEEEEE;
+
+body{
+    background-color: $ligth-gray;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.nav-bar{
+    background-color: $yelow;
+    height: 54px;
+    border-bottom: 1px solid #d9d9d9;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    .logo{
+        background-image: url("/img/Logo_ML@2x.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 44px;
+        overflow: hidden;
+        margin-top: 5px;
+        text-indent: -999px;
+        margin-left: 20%;
+        top: 11px;
+        left: 10px;
+        float:left;
+        width: 110px;
+        background-color:#FFE600;
+    }
+    .content{
+        float:left;
+        width: auto;
+        margin-top: 7px;
+    }
+}
+
+.product-search{   
+    .input{
+        padding: 5px 60px 5px 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px 0px 0px 3px;
+        background-color: #fff;
+        float:left;
+        padding: 7px 5px;
+        height: 40px;
+        width: 409px;
+        font-size: 18px;
+    }
+    .btn{
+        float:left;
+        webkit-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;
+        width: 46px;
+        height: 40px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#f1f1f1));
+        background-image: -webkit-linear-gradient(#fff,#f1f1f1);
+        background-image: linear-gradient(#fff,#f1f1f1);
+        top: 7px;
+        right: 5px;
+    }
+    .icon-search{
+        background-image: url(/img/ic_Search@2x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 19px;
+        height: 18px;
+    }    
+}
+
+
+.breadcrumb{
+  display: inline;
+  width: 100%;
+  margin-top: 75px;
+  font-size: 16px;
+}  
+
+
+.search-results {
+    background-color: white;
+    margin-bottom: 65px;
+    margin-top: 20px;
+    border-radius: 4px;
+   .link {
+        color: -webkit-link;
+        cursor: auto;
+        text-decoration:none !important;
+    }
+}
+
+.produc-list{
+    background-color: $ligth-gray;
+}
+
+.product-preview{
+     background-color: white;
+     padding: 10px;
+     margin-bottom: 1px;
+     cursor: pointer;
+     .picture{
+         width: 150px;
+         height: 150px;  
+         border-radius: 8px;
+     }    
+     .pt-container{
+         margin-top: 10px;
+        .price{
+             font-size: 14px;
+             text-overflow: ellipsis;
+             color: #333;
+             font-size: 20px;
+             line-height: 1.2;
+        }
+        .shipping{
+             background-image: url("/img/ic_shipping.png");
+             background-repeat: no-repeat;
+             background-size: contain;
+             width: 19px;
+             height: 15px;
+             display: inline-block;
+        }
+     }
+     .title{
+        font-size: 14px;
+        margin-top: 13px;
+        text-overflow: ellipsis;
+        color: #333;
+        font-size: 16px;
+        line-height: 1.2;
+     }    
+}
+
+.product-details{
+   background-color: white;
+   margin-bottom: 65px;
+   margin-top: 20px;
+   border-radius: 4px;
+   .image-col{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 32px;
+        img{
+           height: 350px;
+        }
+   }
+   .info-col{
+       margin-top: 32px;
+       .status-quantity{
+            font-size: 14px;
+       }
+       .title{
+            width: 84%;
+            margin-top: 16px;
+            font-size: 20px;
+       }
+       .price{
+            margin-top: 32px;
+            font-size: 46px;
+            margin-bottom: 32px;
+       }
+       .btn{
+           background-color: #3483FA;
+           width: 200px;
+           height: 42px;
+           border-style: inherit;
+           color: white;
+           font-size: 15px;
+       }
+   }
+
+   .description-section{
+        margin-left: 20px;
+        flex-direction: column;
+        margin-bottom: 32px;
+        width: 70%;
+        .title{
+           margin: 32px 0 32px 0;
+           font-size: 28px 
+        }
+        .text{
+            font-size: 15px;
+            line-height: 1.4;
+        }
+   }   
+}
+
+
