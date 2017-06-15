@@ -1,16 +1,16 @@
 import React from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
 import Nav from '../components/Nav.jsx';
 
 class Layout extends React.Component {
-  render () {
+  render() {
     return (
       <div id="layout">
 
-       <Nav/>
+        <Nav />
 
-       {this.props.children}
-            
+        {this.props.children}
+
       </div>
     );
   }

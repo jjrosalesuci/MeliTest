@@ -6,15 +6,15 @@ var BUILD_DIR = path.resolve(__dirname, 'dist');
 var APP_DIR = path.resolve(__dirname, 'src');
 
 module.exports = {
-  entry: [APP_DIR + '/index.jsx',  APP_DIR+'/scss/main.scss'],
+  entry: [APP_DIR + '/index.jsx', APP_DIR + '/scss/main.scss'],
   output: {
     filename: 'dist/bundle.js'
   },
   module: {
-    rules: [      
+    rules: [
       {
-        test : /\.jsx?/,
-        include : APP_DIR,
+        test: /\.jsx?/,
+        include: APP_DIR,
         loaders: ['babel-loader']
       },
       { // regular css files

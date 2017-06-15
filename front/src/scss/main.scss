@@ -21,6 +21,9 @@ body{
     width: 100%;
     overflow: hidden;
     top: 0;
+    .logo-container{
+        max-width: 75px;
+    }
     .logo{
         background-image: url("/img/Logo_ML@2x.png");
         background-repeat: no-repeat;
@@ -29,7 +32,6 @@ body{
         overflow: hidden;
         margin-top: 5px;
         text-indent: -999px;
-        margin-left: 20%;
         top: 11px;
         left: 10px;
         float:left;
@@ -52,7 +54,7 @@ body{
         float:left;
         padding: 7px 5px;
         height: 40px;
-        width: 409px;
+        width: 591px;
         font-size: 18px;
     }
     .btn{

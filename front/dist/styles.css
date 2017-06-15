@@ -999,12 +999,19 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: #EEEEEE; }
+  background-color: #EEEEEE;
+  font-family: 'Roboto', sans-serif; }
 
 .nav-bar {
   background-color: #FFE600;
   height: 54px;
-  border-bottom: 1px solid #d9d9d9; }
+  border-bottom: 1px solid #d9d9d9;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0; }
+  .nav-bar .logo-container {
+    max-width: 75px; }
   .nav-bar .logo {
     background-image: url("/img/Logo_ML@2x.png");
     background-repeat: no-repeat;
@@ -1013,7 +1020,6 @@ body {
     overflow: hidden;
     margin-top: 5px;
     text-indent: -999px;
-    margin-left: 20%;
     top: 11px;
     left: 10px;
     float: left;
@@ -1032,7 +1038,7 @@ body {
   float: left;
   padding: 7px 5px;
   height: 40px;
-  width: 409px;
+  width: 591px;
   font-size: 18px; }
 
 .product-search .btn {
@@ -1055,3 +1061,97 @@ body {
   background-size: cover;
   width: 19px;
   height: 18px; }
+
+.breadcrumb {
+  display: inline;
+  width: 100%;
+  margin-top: 75px;
+  font-size: 16px; }
+
+.search-results {
+  background-color: white;
+  margin-bottom: 65px;
+  margin-top: 20px;
+  border-radius: 4px; }
+  .search-results .link {
+    color: -webkit-link;
+    cursor: auto;
+    text-decoration: none !important; }
+
+.produc-list {
+  background-color: #EEEEEE; }
+
+.product-preview {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 1px;
+  cursor: pointer; }
+  .product-preview .picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px; }
+  .product-preview .pt-container {
+    margin-top: 10px; }
+    .product-preview .pt-container .price {
+      font-size: 14px;
+      text-overflow: ellipsis;
+      color: #333;
+      font-size: 20px;
+      line-height: 1.2; }
+    .product-preview .pt-container .shipping {
+      background-image: url("/img/ic_shipping.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 19px;
+      height: 15px;
+      display: inline-block; }
+  .product-preview .title {
+    font-size: 14px;
+    margin-top: 13px;
+    text-overflow: ellipsis;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.2; }
+
+.product-details {
+  background-color: white;
+  margin-bottom: 65px;
+  margin-top: 20px;
+  border-radius: 4px; }
+  .product-details .image-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 32px; }
+    .product-details .image-col img {
+      height: 350px; }
+  .product-details .info-col {
+    margin-top: 32px; }
+    .product-details .info-col .status-quantity {
+      font-size: 14px; }
+    .product-details .info-col .title {
+      width: 84%;
+      margin-top: 16px;
+      font-size: 20px; }
+    .product-details .info-col .price {
+      margin-top: 32px;
+      font-size: 46px;
+      margin-bottom: 32px; }
+    .product-details .info-col .btn {
+      background-color: #3483FA;
+      width: 200px;
+      height: 42px;
+      border-style: inherit;
+      color: white;
+      font-size: 15px; }
+  .product-details .description-section {
+    margin-left: 20px;
+    flex-direction: column;
+    margin-bottom: 32px;
+    width: 70%; }
+    .product-details .description-section .title {
+      margin: 32px 0 32px 0;
+      font-size: 28px; }
+    .product-details .description-section .text {
+      font-size: 15px;
+      line-height: 1.4; }

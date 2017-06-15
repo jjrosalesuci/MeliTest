@@ -24,7 +24,7 @@ class Breadcrumb extends React.Component {
   }
 
   render() {
-  
+
     var text = "";
     for (var i = 0; i < this.state.category.path_from_root.length; i++) {
       if (i + 1 < this.state.category.path_from_root.length) {

@@ -2,7 +2,6 @@ import dispatcher from "../dispatcher.jsx";
 import axios from 'axios';
 
 export function reloadList(query) {
-  console.log('quey on action', query);
   axios.get(`http://localhost:30000/api/search/${query}`)
     .then(res => {
       dispatcher.dispatch({

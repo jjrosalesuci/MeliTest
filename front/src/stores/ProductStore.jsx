@@ -33,26 +33,21 @@ class ProductStore extends EventEmitter {
 
     handleActions(action) {
         switch (action.type) {
-            case "UPDATE_LIST":
-                console.info(action);
-                this.products = action.list;
-                console.log("Update List");
+            case "UPDATE_LIST":              
+                this.products = action.list;             
                 this.emit("change");
                 break;
 
-            case "UPDATED_SEL":
-                console.info(action);
-                this.selectedProduct = action.product;
-                console.log("Update Selection");
+            case "UPDATED_SEL":               
+                this.selectedProduct = action.product;              
                 this.emit("SelectionChange");
                 break;
 
             case "UPDATE_CATEGORY":
-                this.category = action.category;
-                console.log("Update category");
+                this.category = action.category;             
                 this.emit("categoryChange");
                 break;
-
+                
             default:
                 break;
         }
